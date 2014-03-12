@@ -1,0 +1,46 @@
+body {
+  padding-top: 40px;
+  background: url('http://northshoreholdingsltd.com/assets/images/grey-bg.jpg') repeat scroll 0 0;
+}
+.header {
+  padding: 10px 0px;
+}
+.logo a {
+  font-size: 24px;
+  color: #191970;
+	text-decoration: none;
+}
+.logo a:hover {
+	color: #666;
+}
+.main-section {
+	margin-top: 20px;
+}
+.intro-picture img {
+  border-radius: 6px 6px 6px 6px;
+}
+.practice-boxes {
+  padding: 20px 0px;
+}
+.practice-box {
+  padding: 15px 0;
+}
+.practice-label {
+  background: #888;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 4px 6px;
+  border-radius: 0 6px 6px 0;
+}
+.practice-boxes .span4 {
+  background-color: #F5F5F5;
+  border-radius: 6px 6px 6px 6px;
+}
+.footer {
+  margin: 50px 0 40px;
+  border-top: 1px solid #888;
+}
+.contact {
+  padding-top: 20px;
+}
