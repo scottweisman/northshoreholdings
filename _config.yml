@@ -1,0 +1,12 @@
+title: Northshore Holdings
+author: Scott Weisman
+subtitle: "A nice static website, ready for design."
+description: "A nice static website, ready for design."
+
+source: ./_source
+destination: public
+exclude: [public, Gemfile, Gemfile.lock, Rakefile, README.md]
+
+permalink: /:categories/:title
+markdown: rdiscount
+pygments: true
