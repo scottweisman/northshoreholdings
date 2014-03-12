@@ -73,8 +73,7 @@ task :ship do
   system "git commit -am '#{message}'"
   system "git pull"
   system "git push"
-  Rake::Task['deploy'].execute
-  puts "Pushed latest to GitHub and deployed to http://#{url_live}."
+  puts "Pushed latest to GitHub."
 end
 
 desc "Builds a fresh copy of your site, then opens it."
