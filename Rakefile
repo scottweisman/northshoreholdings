@@ -73,7 +73,7 @@ task :ship do
   system "git commit -am '#{message}'"
   system "git pull"
   system "git push"
-  puts "Pushed latest to GitHub."
+  puts "Shipped to GitHub."
 end
 
 desc "Builds a fresh copy of your site, then opens it."
