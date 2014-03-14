@@ -17,7 +17,7 @@ desc "Design, write, and edit live."
 task :default => [:clean] do
   pids = [
     spawn("jekyll -w build"),
-    spawn("scss --watch _assets:stylesheets")
+    spawn("scss --watch _stylesheets:stylesheets")
   ]
 
   trap "INT" do
