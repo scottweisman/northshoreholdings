@@ -1,17 +1,23 @@
-// Footer ———————————————————————————————————— •
+// Navigation ———————————————————————————————— •
 // ——————————————————————————————————————————— •
 
-.footer {
+.navigation {
   @include border-box;
   margin: 1em auto;
   width: 100%;
 }
 
-// Footer: Desktop ——————————————————————————— •
+.navigation-home {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+// Navigation: Desktop ——————————————————————— •
 // ——————————————————————————————————————————— •
 
 @include responsive-break-point(768px) {
-  .footer {
+  .navigation {
     max-width: 960px;
   }
 }

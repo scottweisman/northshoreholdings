@@ -5,23 +5,19 @@ require "json"
 url_pow     = "northshoreholdingsltd"
 url_live    = "northshoreholdingsltd.com"
 
-deploy_user = "user@website.com"
-deploy_path = "website.com/location"
-
 github_repo = "scottweisman/northshoreholdingsltd"
 
 desc "Delete old website files to start fresh."
 task :clean do
   puts "Starting fresh!"
-  system "rm -rf public"
+  system "rm -rf _site"
 end
 
 desc "Design, write, and edit live."
 task :default => [:clean] do
   pids = [
     spawn("jekyll -w build"),
-    spawn("sass --watch _source/_assets/sass:_source/assets/stylesheets"),
-    spawn("coffee --bare --watch --join _source/assets/javascript/scripts.js --compile _source/_assets/coffeescript/*.coffee")
+    spawn("scss --watch _assets:stylesheets")
   ]
 
   trap "INT" do
@@ -43,25 +39,7 @@ end
 desc "Generate a copy of the most current site."
 task :compile do
   system "jekyll build"
-  system "sass --style compressed _source/_assets/sass/style.scss:public/assets/stylesheets/style.css"
-  system "coffee --bare --join public/assets/javascript/scripts.js --compile _source/_assets/coffeescript/*.coffee"
-end
-
-desc "Compress JavaScript."
-task :compress do
-  system "uglifyjs public/assets/javascript/scripts.js --compress --output public/assets/javascript/scripts.js"
-  puts "Compressed JavaScript."
-end
-
-desc "Build a clean, compressed copy of the site."
-task :build => [:clean, :compile, :compress] do
-  puts "Done! See it locally at http://#{url_pow}.dev, or live at http://#{url_live}."
-end
-
-desc "Upload a fresh copy of the site to your server."
-task :deploy => [:build] do
-  puts "Deploying at http://#{url_live}!"
-  system "rsync -avze 'ssh -p 22' --delete public/ #{deploy_user}:#{deploy_path}"
+  # system "sass --style compressed _assets/stylesheets/style.scss:public/assets/stylesheets/style.css"
 end
 
 desc "Upload a copy of your site to the server, and update GitHub."
@@ -98,21 +76,5 @@ namespace :view do
   desc "View your project on GitHub."
   task :github do
     system "open http://github.com/#{github_repo}"
-  end
-
-  desc "A quick glimpse at your GitHub repo’s watchers, stars, and forks."
-  namespace :github do
-    task :stats do
-      puts "Downloading GitHub repo data through their API…"
-      json = `curl https://api.github.com/repos/#{github_repo}`
-      repo = JSON.parse(json)
-      puts ""
-      puts "-------------------------------------------------------------------"
-      puts ""
-      puts "#{github_repo} has #{repo['subscribers_count']} watchers, #{repo['stargazers_count']} stars and #{repo['forks_count']} forks."
-      puts ""
-      puts "-------------------------------------------------------------------"
-      puts ""
-    end
   end
 end

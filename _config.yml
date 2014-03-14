@@ -3,8 +3,8 @@ author: Scott Weisman
 subtitle: "A nice static website, ready for design."
 description: "A nice static website, ready for design."
 
-exclude: [public, Gemfile, Gemfile.lock, Rakefile, README.md]
+# exclude: [public, Gemfile, Gemfile.lock, Rakefile, README.md]
 
-permalink: /:categories/:title
+permalink: /:title
 markdown: rdiscount
 pygments: true
