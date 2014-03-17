@@ -1,15 +1,12 @@
 {% include head.html %}
   <body{% if page.class %} class="{{ page.class }}"{% endif %}>
-    {% include navigation.html %}
+  	<div id="wrap">
+	    {% include navigation.html %}
 
-  <div class="hero">
+	      {{ content }}
 
-  </div>
-
-    <div class="content">
-      {{ content }}
+	    <div id="push"></div>
     </div>
-
-    {% include footer.html %}
+	    {% include footer.html %}
   </body>
 </html>

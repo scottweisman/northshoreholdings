@@ -10,13 +10,14 @@ github_repo = "scottweisman/northshoreholdingsltd"
 desc "Delete old website files to start fresh."
 task :clean do
   puts "Starting fresh!"
-  system "rm -rf _site"
+  system "rm -rf public"
 end
 
 desc "Design, write, and edit live."
 task :default => [:clean] do
   pids = [
-    spawn("jekyll -w build"),
+    # spawn("jekyll -w build"),
+    spawn("jekyll serve -w"),
     spawn("scss --watch _stylesheets:stylesheets")
   ]
 
@@ -51,7 +52,7 @@ task :ship do
   system "git commit -am '#{message}'"
   system "git pull"
   system "git push"
-  puts "Shipped to GitHub."
+  puts "Shipped."
 end
 
 desc "Builds a fresh copy of your site, then opens it."

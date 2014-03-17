@@ -1,23 +1,35 @@
 // Navigation ———————————————————————————————— •
 // ——————————————————————————————————————————— •
 
-.navigation {
-  @include border-box;
-  margin: 1em auto;
-  width: 100%;
-}
+.navbar {
+	background: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(50,50,50,.75);
+  box-shadow: 0 0 4px rgba(50,50,50,.75);
 
-.navigation-home {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-
-// Navigation: Desktop ——————————————————————— •
-// ——————————————————————————————————————————— •
-
-@include responsive-break-point(768px) {
-  .navigation {
-    max-width: 960px;
+  li {
+  	font-size: 18px;
+  	text-transform: uppercase;
   }
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+
+.logo {
+	width: 360px;
+}
+
+
+button.navbar-toggle {
+	background-color: $base-blue;
+	margin-top: 34px;
+
+	.fa-bars {
+		color: #fff;
+		font-size: 18px;
+	}
 }

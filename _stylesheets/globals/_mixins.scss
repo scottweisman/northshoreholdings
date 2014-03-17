@@ -1,7 +1,7 @@
 // Typography ———————————————————————————————— •
 // ——————————————————————————————————————————— •
 
-$font-sans: Helvetica, "Lucida Grand", Arial, sans-serif;
+$font-sans: lato, Helvetica, "Lucida Grand", Arial, sans-serif;
 $font-serif: Georgia, Times, serif;
 
 @mixin font-smoothing($attr) {
@@ -18,6 +18,8 @@ $color-link-hover: #63D3FF;
 $color-link-visited: #02779E;
 $color-text: #333;
 $color-spot: #FF548F;
+
+$base-blue: #10397b;
 
 
 // Effects ——————————————————————————————————— •
