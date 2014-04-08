@@ -24,7 +24,7 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -180px;
+  margin: 0 auto -200px;
 }
 
 a {
@@ -36,49 +36,10 @@ a {
   &:active { color: $base-blue; }
 }
 
-.banner {
-  background: url('/images/chicago-skyline-panorama-blue.jpg') no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 300px;
-  text-align: center;
-
-  h1 {
-    color: #fff;
-    text-shadow: 1px 1px 0 #000;
-    padding: 80px 0 10px;
-  }
-
-  p {
-    color: #fff;
-    font-size: 18px;
-  }
-
-  .btn-default {
-    background: #fff;
-    color: $base-blue;
-
-    &:hover {
-      @include transition(all 0.4s ease-in-out);
-      background: #fff;
-      color: #444;
-    }
-  }
-
-  i {
-    margin-left: 6px;
-  }
-}
-
-
 h2 {
   border-bottom: 1px solid $base-blue;
   font-weight: 300;
 }
-
-
 
 
 

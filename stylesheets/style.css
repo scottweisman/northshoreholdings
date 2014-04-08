@@ -7,7 +7,7 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -180px; }
+  margin: 0 auto -200px; }
 
 a {
   color: #10397b;
@@ -19,34 +19,6 @@ a {
     text-decoration: none; }
   a:active {
     color: #10397b; }
-
-.banner {
-  background: url("/images/chicago-skyline-panorama-blue.jpg") no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 300px;
-  text-align: center; }
-  .banner h1 {
-    color: #fff;
-    text-shadow: 1px 1px 0 #000;
-    padding: 80px 0 10px; }
-  .banner p {
-    color: #fff;
-    font-size: 18px; }
-  .banner .btn-default {
-    background: #fff;
-    color: #10397b; }
-    .banner .btn-default:hover {
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      -ms-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-      background: #fff;
-      color: #444; }
-  .banner i {
-    margin-left: 6px; }
 
 h2 {
   border-bottom: 1px solid #10397b;
@@ -78,7 +50,7 @@ button.navbar-toggle {
     font-size: 18px; }
 
 #push, #footer {
-  height: 180px; }
+  height: 200px; }
 
 footer {
   background-color: #10397b;
@@ -88,6 +60,33 @@ footer {
 
 .home .navbar {
   margin-bottom: 0; }
+.home .banner {
+  background: url("/images/chicago-skyline-panorama-blue.jpg") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+  text-align: center; }
+  .home .banner h1 {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    padding: 80px 0 10px; }
+  .home .banner p {
+    color: #fff;
+    font-size: 18px; }
+  .home .banner .btn-default {
+    background: #fff;
+    color: #10397b; }
+    .home .banner .btn-default:hover {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      background: #fff;
+      color: #444; }
+  .home .banner i {
+    margin-left: 6px; }
 .home .thumbnails {
   margin-top: 40px; }
 .home .thumbnail {
