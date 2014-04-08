@@ -83,12 +83,13 @@ button.navbar-toggle {
 footer {
   background-color: #10397b;
   color: #fff;
-  padding: 20px 0; }
+  padding: 20px 0;
+  margin-top: 40px; }
 
 .home .navbar {
   margin-bottom: 0; }
 .home .thumbnails {
-  margin: 40px auto; }
+  margin-top: 40px; }
 .home .thumbnail {
   border: none;
   text-align: center; }
