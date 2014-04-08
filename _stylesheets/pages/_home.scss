@@ -1,0 +1,20 @@
+.home {
+
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  .thumbnails {
+    margin: 40px auto;
+  }
+
+  .thumbnail {
+    border: none;
+    text-align: center;
+
+    .fa {
+      color: $base-blue;
+      font-size: 76px;
+    }
+  }
+}

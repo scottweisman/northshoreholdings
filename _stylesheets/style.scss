@@ -5,7 +5,6 @@
 @import
   'globals/mixins';
 
-
 $font-sans: lato, Helvetica, "Lucida Grand", Arial, sans-serif;
 
 $base-blue: #10397b;
@@ -58,8 +57,8 @@ a {
   }
 
   .btn-default {
-    background: transparent;
-    color: #fff;
+    background: #fff;
+    color: $base-blue;
 
     &:hover {
       @include transition(all 0.4s ease-in-out);
@@ -80,9 +79,15 @@ h2 {
 }
 
 
+
+
+
 // Components ———————————————————————————————— •
 // ——————————————————————————————————————————— •
 
 @import
   'components/navigation',
   'components/footer';
+
+@import
+  'pages/home'

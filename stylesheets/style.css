@@ -36,8 +36,8 @@ a {
     color: #fff;
     font-size: 18px; }
   .banner .btn-default {
-    background: transparent;
-    color: #fff; }
+    background: #fff;
+    color: #10397b; }
     .banner .btn-default:hover {
       -webkit-transition: all 0.4s ease-in-out;
       -moz-transition: all 0.4s ease-in-out;
@@ -55,7 +55,8 @@ h2 {
 .navbar {
   background: #fff;
   -webkit-box-shadow: 0 0 4px rgba(50, 50, 50, 0.75);
-  box-shadow: 0 0 4px rgba(50, 50, 50, 0.75); }
+  box-shadow: 0 0 4px rgba(50, 50, 50, 0.75);
+  margin-bottom: 40px; }
   .navbar li {
     font-size: 18px;
     text-transform: uppercase; }
@@ -83,3 +84,14 @@ footer {
   background-color: #10397b;
   color: #fff;
   padding: 20px 0; }
+
+.home .navbar {
+  margin-bottom: 0; }
+.home .thumbnails {
+  margin: 40px auto; }
+.home .thumbnail {
+  border: none;
+  text-align: center; }
+  .home .thumbnail .fa {
+    color: #10397b;
+    font-size: 76px; }
