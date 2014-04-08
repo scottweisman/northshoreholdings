@@ -96,3 +96,6 @@ footer {
   .home .thumbnail .fa {
     color: #10397b;
     font-size: 76px; }
+
+address {
+  margin-top: 20px; }
