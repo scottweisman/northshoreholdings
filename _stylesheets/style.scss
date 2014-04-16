@@ -31,7 +31,6 @@ a {
   color: $base-blue;
   text-decoration: none;
 
-  &:visited { color: $base-blue; }
   &:hover { color: $base-blue; text-decoration: none; }
   &:active { color: $base-blue; }
 }
@@ -52,4 +51,5 @@ h2 {
 
 @import
   'pages/home',
+  'pages/apply',
   'pages/contact';

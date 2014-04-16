@@ -2,7 +2,7 @@
 // ——————————————————————————————————————————— •
 
 #push, #footer {
-	height: 200px;
+	height: 160px;
 }
 
 footer {
@@ -10,4 +10,18 @@ footer {
 	color: #fff;
 	padding: 20px 0;
 	margin-top: 40px;
+	font-size: 12px;
+
+
+	address {
+		a {
+			color: #fff;
+		}
+		margin: 0;
+	}
+
+	.disclaimer {
+		color: #ddd;
+	}
 }
+

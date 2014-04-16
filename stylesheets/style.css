@@ -12,8 +12,6 @@ html, body {
 a {
   color: #10397b;
   text-decoration: none; }
-  a:visited {
-    color: #10397b; }
   a:hover {
     color: #10397b;
     text-decoration: none; }
@@ -50,18 +48,25 @@ button.navbar-toggle {
     font-size: 18px; }
 
 #push, #footer {
-  height: 200px; }
+  height: 160px; }
 
 footer {
   background-color: #10397b;
   color: #fff;
   padding: 20px 0;
-  margin-top: 40px; }
+  margin-top: 40px;
+  font-size: 12px; }
+  footer address {
+    margin: 0; }
+    footer address a {
+      color: #fff; }
+  footer .disclaimer {
+    color: #ddd; }
 
 .home .navbar {
   margin-bottom: 0; }
 .home .banner {
-  background: url("/images/chicago-skyline-panorama-blue.jpg") no-repeat top center fixed;
+  background: url("/images/happy_family_outside_home.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -96,5 +101,9 @@ footer {
     color: #10397b;
     font-size: 76px; }
 
-address {
+.apply .app-icon {
+  margin-top: 20px;
+  width: 120px; }
+
+.contact address {
   margin-top: 20px; }
