@@ -12,7 +12,7 @@ layout: default
 			  <strong>North Shore Holdings, Ltd.</strong><br>
 			  6859 West Belmont Avenue<br>
 			  Chicago, IL 60634<br>
-			  P: (847)337-7277<br>
+			  P: (847) 337-7277<br>
 			  F: (773) 305-2788<br>
 			  <a href="mailto:help@northshoreholdingsltd.com" target="_top">info@northshoreholdingsltd.com</a>
 			</address>
@@ -20,25 +20,51 @@ layout: default
 
 		<div class="col-md-8">
 			<h2>Contact Us</h2>
-			<form role="form" action="//api.formspree.com/scott@launchpadlab.com">
-				<div class="form-group">
-					<label for="name">Your Name</label>
-			    <input type="text" name="name" class="form-control">
-			  </div>
-			  <div class="form-group">
-			  	<label for="_replyto">Your Email</label>
-			    <input type="email" name="_replyto" class="form-control">
-			  </div>
-			  <div class="form-group">
-			  	<label for="phone">Your Phone Number</label>
-			    <input type="phone" name="phone" class="form-control">
-			  </div>
-			  <div class="form-group">
-			  	<label for="message">Message</label>
-			    <textarea type="text" name="message" rows="3" class="form-control"></textarea>
-			  </div>
-			  <button type="submit" class="btn btn-primary btn-lg">Send</button>
-			</form>
+			<div id="contact-form">
+				<form action="#" id="ajax-form">
+					<div class="form-group">
+				    <label>Your Name</label>
+				    <input type="text" name="name" class="form-control">
+				  </div>
+				  <div class="form-group">
+				  	<label>Your Email</label>
+				  	<input type="email" name="email" class="form-control">
+				  </div>
+				  <div class="form-group">
+				  	<label>Your Phone Number</label>
+				  	<input type="phone" name="phone" class="form-control">
+				  </div>
+				  <div class="form-group">
+				    <label>Message</label>
+				    <textarea name="message" rows="3" class="form-control"></textarea>
+				  </div>
+			    <input type="submit" value="Send" class="btn btn-primary btn-lg">
+				</form>
+			</div>
+<!--
+			<div id="contact-form">
+				<form action="#" id="ajax-form">
+					<div class="form-group">
+						<label for="name">Your Name</label>
+				    <input type="text" name="name" class="form-control">
+				  </div>
+				  <div class="form-group">
+				  	<label for="_replyto">Your Email</label>
+				    <input type="email" name="_replyto" class="form-control">
+				  </div>
+				  <div class="form-group">
+				  	<label for="phone">Your Phone Number</label>
+				    <input type="phone" name="phone" class="form-control">
+				  </div>
+				  <div class="form-group">
+				  	<label for="message">Message</label>
+				    <textarea type="text" name="message" rows="3" class="form-control"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-primary btn-lg">Send</button>
+				</form>
+			</div> -->
+
+
 		</div>
 	</div>
 
