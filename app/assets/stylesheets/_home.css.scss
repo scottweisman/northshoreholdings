@@ -1,0 +1,31 @@
+.banner {
+	position: relative;
+	height: 26.38rem;
+	background-color: #9a958f;
+	background: image-url("happy_family_outside_home.jpg") no-repeat center;
+	background-size: cover;
+	color: #fff;
+	padding-top: 3.125rem;
+	text-align: center;
+
+	h1 {
+		color: #fff;
+	}
+}
+
+.thumbnails {
+	margin-top: 40px;
+}
+
+.thumbnail {
+	text-align: center;
+
+	i.fa {
+	  color: $base-blue;
+	  font-size: 76px;
+	}
+
+	h3 {
+		color: $base-blue;
+	}
+}
