@@ -1,2 +1,20 @@
-<h1>Pages#apply</h1>
-<p>Find me in app/views/pages/apply.html.erb</p>
+<div class="row">
+	<div class="small-12 medium-4 columns">
+		<h3>Apply Today</h3>
+		<p>Ready to apply? Download our Rental Application in Microsoft Word or PDF format.
+			When your application is complete, you can email it to us at <a href="mailto:apply@northshoreholdingsltd.com" target="_top">apply@northshoreholdingsltd.com</a>,
+			or fax it to us at (773) 305-2788.
+		</p>
+	</div>
+	<div class="small-12 medium-8 columns">
+		<div class="row">
+			<h2>Download your Rental Application</h2>
+			<div class="small-6 columns text-center">
+				<%= link_to image_tag('doc_icon.png', class: 'app-icon'), "/rental_application_nsholdings.doc" %>
+			</div>
+			<div class="small-6 columns text-center">
+				<%= link_to image_tag('pdf_icon.png', class: 'app-icon'), "/rental_application_nsholdings.pdf" %>
+			</div>
+		</div>
+	</div>
+</div>
