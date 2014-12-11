@@ -1,9 +1,11 @@
 title: North Shore Holdings Ltd
-author: Scott Weisman
-description: "A nice static website, ready for design."
+description: "North Shore Holdings acquires, renovates, leases and manages residential real estate in the Chicagoland area."
 
 # exclude: [public, Gemfile, Gemfile.lock, Rakefile, README.md]
 
 permalink: /:title
 markdown: rdiscount
-pygments: true
+
+sass:
+  sass_dir: _scss
+  style: :compressed

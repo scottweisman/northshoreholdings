@@ -1,0 +1,31 @@
+
+// Base Styles ——————————————————————————————— •
+// ——————————————————————————————————————————— •
+
+
+html, body {
+  font-family: $font-sans;
+  font-size: 16px;
+  height: 100%;
+  // padding-top: 100px;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -160px;
+}
+
+a {
+  color: $base-blue;
+  text-decoration: none;
+
+  &:hover { color: $base-blue; text-decoration: none; }
+  &:active { color: $base-blue; }
+}
+
+h2 {
+  border-bottom: 1px solid $base-blue;
+  font-weight: 300;
+}
