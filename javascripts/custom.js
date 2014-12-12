@@ -16,18 +16,18 @@ $('#ajax-form').submit(function(){
 
 // Quotes
 
-$(function() {
-  var quotes = $(".quotes");
-  var quoteIndex = -1;
+// $(function() {
+//   var quotes = $(".quotes");
+//   var quoteIndex = -1;
 
-  function showNextQuote() {
-    ++quoteIndex;
-    quotes.eq(quoteIndex % quotes.length)
-      .fadeIn(3000)
-      .delay(3000)
-      .fadeOut(3000, showNextQuote);
-  }
+//   function showNextQuote() {
+//     ++quoteIndex;
+//     quotes.eq(quoteIndex % quotes.length)
+//       .fadeIn(3000)
+//       .delay(3000)
+//       .fadeOut(3000, showNextQuote);
+//   }
 
-  showNextQuote();
+//   showNextQuote();
 
-});
+// });

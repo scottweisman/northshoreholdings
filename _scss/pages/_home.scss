@@ -53,37 +53,39 @@
       font-size: 76px;
     }
   }
-}
 
   // QUOTES
 
-  .quotes {display: none;}
+  // .quotes {display: none;}
 
-  blockquote {
-   padding-top: 2em;
-   margin-bottom: 60px;
-   min-height: 220px;
-   @media only screen and (max-width: 40em){
-    min-height: 475px;
+  .center-block {
+    float: none;
   }
 
-  .featured-quote {
-    color: $base-blue;
-    font-style: italic;
+  blockquote {
+    background: #f9f9f9;
+    border-left: 2px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.7em 10px;
+    quotes: "\201C""\201D""\201C""\201D";
+  }
 
-    &:before{
-      content: "\201C";
-      font-size: 200px;
-      left: -42px;
-      opacity: 0.3;
-      position: absolute;
-      top: -31px;
-      width: 100%;
-    }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote h4 {
+    display: inline;
   }
 
   cite {
-    color: #444;
+    display: block;
+    color: #777;
     text-align: right;
   }
 
