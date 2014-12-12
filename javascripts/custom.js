@@ -13,21 +13,3 @@ $('#ajax-form').submit(function(){
   });
   return false; //to stop the form from submitting
 });
-
-// Quotes
-
-// $(function() {
-//   var quotes = $(".quotes");
-//   var quoteIndex = -1;
-
-//   function showNextQuote() {
-//     ++quoteIndex;
-//     quotes.eq(quoteIndex % quotes.length)
-//       .fadeIn(3000)
-//       .delay(3000)
-//       .fadeOut(3000, showNextQuote);
-//   }
-
-//   showNextQuote();
-
-// });
