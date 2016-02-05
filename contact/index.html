@@ -21,7 +21,8 @@ layout: default
 		<div class="col-md-8">
 			<h2>Contact Us</h2>
 			<div id="contact-form">
-				<form action="#" id="ajax-form">
+				<form action="//formspree.io/info@northshoreholdingsltd.com" method="POST">
+					<input type="text" name="_gotcha" style="display:none" />
 					<div class="form-group">
 				    <label>Your Name</label>
 				    <input type="text" name="name" class="form-control">
@@ -38,6 +39,8 @@ layout: default
 				    <label>Message</label>
 				    <textarea name="message" rows="3" class="form-control"></textarea>
 				  </div>
+				  <input type="hidden" name="_subject" value="North Shore Holdings Contact Form" />
+				  <input type="hidden" name="_next" value="/thank-you" />
 			    <input type="submit" value="Send" class="btn btn-primary btn-lg">
 				</form>
 			</div>
