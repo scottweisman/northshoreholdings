@@ -1,3 +1,5 @@
 source "https://rubygems.org"
 
-gem 'github-pages'
+gem "jekyll", "3.4.0"
+
+gem 'kramdown', '~> 1.14'
